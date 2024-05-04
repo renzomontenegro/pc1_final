@@ -20,12 +20,20 @@ class MainActivity : AppCompatActivity() {
         val btnCalcular : Button = findViewById(R.id.btnCalcular)
 
         btnCalcular.setOnClickListener{
-            this.sendMessage(etPEP.text.toString());
+            val parcial = etParcial.text.toString().toDouble()
+            val final = etFinal.text.toString().toDouble()
+            val pep = etPEP.text.toString().toDouble()
+
+            val promedio = parcial * 0.2 + final * 0.2 + pep * 0.6
+            val promedioRedondeado = String.format("%.2f", promedio)
+
+            this.sendMessage(promedioRedondeado)
         }
     }
+
     private fun sendMessage(message: String){
-        val intent = Intent(this,ResultadoCalculo::class.java)
-        intent.putExtra("param",message)
+        val intent = Intent(this, ResultadoCalculo::class.java)
+        intent.putExtra("param", message)
         startActivity(intent)
     }
 }

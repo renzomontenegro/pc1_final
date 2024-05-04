@@ -14,12 +14,13 @@ class ResultadoCalculo : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_resultado_calculo)
 
-        val message = intent.getStringExtra("param")
-        val textView = findViewById<TextView>(R.id.tvPEP)
-        textView.text = message
-        val btnCalculo: Button =findViewById(R.id.btnCalcular)
+        val promedio = intent.getStringExtra("param")
+        val tvResultado = findViewById<TextView>(R.id.tvResultado)
+        tvResultado.text = promedio
 
-        btnCalculo.setOnClikListener{
+        val btnRegresar: Button = findViewById(R.id.btnRegresar)
+
+        btnRegresar.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

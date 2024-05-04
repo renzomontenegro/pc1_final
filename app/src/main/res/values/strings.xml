@@ -5,4 +5,6 @@
     <string name="textFinal">Examen Final</string>
     <string name="textPEP">Promedio de Evaluacion Permanente (PEP)</string>
     <string name="textCalcular">Calcular</string>
+    <string name="textResult">RESULTADOS</string>
+    <string name="TEXT">La nota final es</string>
 </resources>
