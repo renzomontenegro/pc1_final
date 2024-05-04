@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">pc1_final</string>
+    <string name="tituloPrincipal">Cálculo de Notas</string>
+    <string name="textParcial">Examen Parcial</string>
+    <string name="textFinal">Examen Final</string>
+    <string name="textPEP">Promedio de Evaluacion Permanente (PEP)</string>
+    <string name="textCalcular">Calcular</string>
+</resources>
